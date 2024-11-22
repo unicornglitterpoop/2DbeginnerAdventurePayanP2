@@ -6,7 +6,7 @@ using UnityEngine;
 public class Marshmellowcontroller : MonoBehaviour
 {
 
-    public float speed = 4.0f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +21,8 @@ public class Marshmellowcontroller : MonoBehaviour
         Debug.Log(horizontal);
 
         Vector2 position = transform.position;
-        position.x = position.x + speed * horizontal * Time.deltaTime;
-        position.y = position.y + speed * vertical * Time.deltaTime;
+        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
+        position.y = position.y + 3.0f * vertical * Time.deltaTime;
 
         transform.position = position;
     }
